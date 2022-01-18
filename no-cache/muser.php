@@ -1,0 +1,1 @@
+var	iplogin=false;var muser='';muser+='<div class="ic"></div><strong><a href="./user/login.html">Đăng nhập</a></strong>';muser+=' <strong><a href="./user/register.html">Đăng ký</a></strong>';document.write(muser);

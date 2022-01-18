@@ -1,0 +1,31 @@
+<?php
+if (!defined('IN_MEDIA')) die("Hack");
+
+function players($url,$film_id,$e_id,$type,$width,$height,$sv=0,$film_sub,$postajax=0,$linknext){
+    global $mysql, $web_link,$temp,$tb_prefix;
+	$stretching			=	"uniform";
+	//////////EPISODE//////////
+	$epnext	=	$mysql->fetch_array($mysql->query("SELECT episode_type,episode_name FROM ".$tb_prefix."episode WHERE episode_id = ".$e_id));
+	$eptype	=	$epnext['episode_type'];
+	$q 		= 	$mysql->query("SELECT episode_id,episode_name,episode_type,episode_message,episode_urlsub FROM ".$tb_prefix."episode WHERE episode_film = ".$film_id." AND episode_id > $e_id AND episode_type = $eptype ORDER BY episode_id ASC");
+	$r 		= 	$mysql->fetch_array($q);
+	if(!$mysql->num_rows($q))
+		$nextepid = 0;
+	else 
+		$nextepid = $r['episode_id'];
+	$gk_player 		= "http://phim6v.com/jwplayer/player.swf";
+	$gk_plugins		= "";
+	$gk_skin 		= "http://phim6v.com/jwplayer/bekle/bekle.xml";
+	$url 			= $url;
+	$gk_url  		= $url;
+	$urlmahoa		= $urlk = $url;
+	$captions 		= ($film_sub?',captions-2':"");
+	$link_sub 		= ($film_sub?'http://phim6v.com/sub/'.$film_sub:"http://phim6v.com/sub.xml");
+	if($linknext)
+	$linknext = "proxy.nextlocation=".$linknext;
+	$player = '<div style="position: relative; width: 100%; height: 100%;" id="player_wrapper"><object tabindex="0" name="player" id="player" bgcolor="#000000" data='.$gk_player.' type="application/x-shockwave-flash" height="100%" width="100%"><param value="true" name="allowfullscreen"><param value="always" name="allowscriptaccess"><param value="true" name="seamlesstabbing"><param value="opaque" name="wmode"><param value="netstreambasepath=http://phim6v.com/&id=player&skin='.$gk_skin.'&autostart=true&plugins=timeslidertooltipplugin-1h,http://plugins.longtailvideo.com/5/captions/captions.swf&proxy.file=http://phim6v.com/jwplayer/player.php&file='.$url.'&timeslidertooltipplugin.pluginmode=FLASH&captions.color=#ffff80&captions.fontFamily=Tahoma, Geneva, sans-serif&captions.fontSize=14&captions.fontWeight=normal&captions.file='.$link_sub.'&captions.pluginmode=HYBRID&controlbar.position=bottom" name="flashvars"></object><div style="position: absolute; z-index: 10; left: 0px; top: 0px;" id="player_captions"></div></div>';
+
+	return $player;
+
+}
+?>

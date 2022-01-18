@@ -1,0 +1,37 @@
+<object id="flashplayer" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="600" height="400">
+<param name="movie" value="player.swf" />
+<param name="allowFullScreen" value="true" />
+<param name="allowScriptAccess" value="always" />
+<param name="FlashVars" value="plugins=plugins/proxy.swf&proxy.link=https://picasaweb.google.com/lh/photo/oLb1wikeW75BUCYthty5JGdsRkDU9D-GZvm2P4XELMM" />
+<embed name="flashplayer" src="player.swf" FlashVars="plugins=plugins/proxy.swf&proxy.link=https://picasaweb.google.com/lh/photo/oLb1wikeW75BUCYthty5JGdsRkDU9D-GZvm2P4XELMM" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always" width="600" height="400" />
+</object>
+<br/><br/>
+allow Link:<br/>
+https://picasaweb.google.com/lh/photo/oLb1wikeW75BUCYthty5JGdsRkDU9D-GZvm2P4XELMM<br/>
+https://picasaweb.google.com/lh/photo/oLb1wikeW75BUCYthty5JGdsRkDU9D-GZvm2P4XELMM?start=15<br/>
+https://picasaweb.google.com/106164294256489669464/Image?authkey=Gv1sRgCKm7hsnPk5aRZQ#5657122599477586178<br/>
+https://picasaweb.google.com/lh/photo/EXbYzXpUnlELm0FHsEcmbE9c4LVWd6J4g-EJTl_M9Bo<br/>
+<br/>
+use plugins_player1.php (high secure, use more power of server)<br/>
+- open plugins/pluginslist.xml<br/>
+- replace gkplugins_picasaweb.swf to gkplugins_picasaweb.swf?php=1<br/>
+disable menu quality:<br/>
+- open plugins/pluginslist.xml<br/>
+- replace gkplugins_picasaweb.swf to gkplugins_picasaweb.swf?menu=false<br/>
+default menu quality:<br/>
+- open plugins/pluginslist.xml<br/>
+- replace gkplugins_picasaweb.swf to gkplugins_picasaweb.swf?quality=480p (240p/360p/480p/720p/1080p)<br/>
+use Dock menu:<br/>
+- open plugins/pluginslist.xml<br/>
+- replace gkplugins_picasaweb.swf to gkplugins_picasaweb.swf?dockmenu=true<br/>
+use Box menu:<br/>
+- open plugins/pluginslist.xml<br/>
+- replace gkplugins_picasaweb.swf to gkplugins_picasaweb.swf?boxmenu=true<br/>
+- config layout same as config on plugin youtube<br/>
+show quality same as player google:<br/>
+- open plugins/pluginslist.xml<br/>
+- replace gkplugins_picasaweb.swf to gkplugins_picasaweb.swf?exactquality=false<br/>
+player of google show quality by range, so not exactly<br/>
+361->480 : show 480p<br/>
+481->720 : show 720p<br/>
+if your video is 482p, it will show 720p

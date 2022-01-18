@@ -1,0 +1,63 @@
+<script type="text/javascript">
+    var next_id = '{episode.ID}';
+    $(document).ready(function() {
+        xpo_next_video();
+    })
+</script>
+{BREADCRUMBS}
+<div class="movie-watch">
+    <!-- MAIN box_ads('ads_playertren1','playertren1') -->
+    <script type="text/javascript">
+        $(function() {
+            setupplayer({
+                episode.ID
+            }, 0)
+        });
+    </script>
+    <div id="player">
+        <!-- BEGIN PLAYER -->
+        <div id="player-rz">
+            <div id="ip-mediaplayer">
+                <div id="mediaplayer"></div>
+            </div>
+            <div id="load-plugins-ip">
+                <div class="fb-like" style="float: left;padding: 6px 0px 0px 10px;" data-href="{film.URL}" show_faces="false" data-layout="button_count" data-share="true"></div>
+                <div class="l" style="float: left;padding: 6px 0px 0px 10px;">
+                    <div class="g-plusone" data-size="medium" data-href="{film.URL}" data-count="true"></div>
+                </div>
+                <!-- <a class="bottom-ip show_hide">Tải Phim</a> -->
+                <a class="bottom-ip" onclick="return ip_error({film_id},{episode.ID})">Báo lỗi</a>
+                <a class="bottom-ip _zoom" onclick="return _zoom()">Phóng to</a>
+                <a class="bottom-ip _light" onclick="return _light()">Tắt đèn</a>
+                <!-- <a class="bottom-ip _autonext" onclick="return _autonext()">AutoNext: <span>On</span></a> -->
+            </div>
+        </div>
+        <!-- END PLAYER -->
+    </div>
+    <!-- MAIN announcement() -->
+    <!-- MAIN box_ads('ads_playerduoi1','playerduoi1') -->
+    <br class="clr"> {any_episodes}
+</div>
+<br class="clr">
+<div class="movie-box" id="comment_field">
+    <span class="title-comment">BÌNH LUẬN PHIM : {film_name}</span>
+    <script type='text/javascript' src='https://apis.google.com/js/plusone.js'></script>
+    <div class="fb-comments" data-href="{film.URL}" data-num-posts="8" data-width="736" data-colorscheme="dark"></div>
+</div>
+<br class="clr"> {film.TAG}
+<script type="text/javascript">
+    var paddingtop = $('#server_{server.ID}').height();
+    $('#server_{server.ID}').css({
+        position: 'absolute',
+        top: 0,
+        width: '100%'
+    });
+    $('.list_episodes').css({
+        'padding-top': paddingtop + 'px'
+    });
+</script>
+<script type="text/javascript">
+    $("html,body").animate({
+        scrollTop: $("div.fjx-top").offset().top
+    }, 2000);
+</script>

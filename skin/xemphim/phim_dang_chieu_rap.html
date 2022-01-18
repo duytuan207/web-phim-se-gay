@@ -1,0 +1,34 @@
+﻿		<div class="slider_chieurap cf fjx-top list_carousel">
+        	<ul id="filmSlide" class="first-and-second-carousel jcarousel-skin-tango">
+				<!-- BEGIN film_menu --><!-- #BEGIN phim_dang_chieu_rap.row -->
+            	<li>
+                	<div class="border_img">
+                	<a class="th tooltip" rel="{film.ID}" href="{film.URL}" title="{film.CUT_NAME2}">
+					<span class="roll" ></span>
+					<img src="{film.IMG}" alt="{film.CUT_NAME2}" title="{film.CUT_NAME2}" />
+					</a>
+						<div class="meta_block_spec_cf">					
+							<p class="title">	
+								<span class="ribbon" style="top:-225px;">{film.TIME}</span>							
+								<a href="{film.URL}" title="{film.CUT_NAME}">{film.CUT_NAME}</a>					
+							</p> 
+							<p>{film.CAT}</p> 
+						</div>
+                    </div>
+                </li>
+                <!-- #END phim_dang_chieu_rap.row --><!-- END film_menu -->
+            </ul>
+			<a class="jcarousel-prev-horizontal" href="#"></a>
+			<a class="jcarousel-next-horizontal" href="#"></a>
+        </div>
+        <script type="text/javascript">
+		$(document).ready(function() {
+			$("#filmSlide").carouFredSel({
+				auto:false,
+				prev:'.jcarousel-prev-horizontal',
+				next:'.jcarousel-next-horizontal',
+				autoSlideInterval: 1E4,
+				delayAutoSlide: 5E3
+			});
+		})	
+		</script>

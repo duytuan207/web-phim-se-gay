@@ -1,0 +1,17 @@
+			<div class="movie-box">
+            	<h3>Phim cùng thể loại</h3>
+                <ul class="cf">
+                    <!-- BEGIN film_menu --><!-- #BEGIN relate_film.row -->
+                    <li>
+                        <a class="th tooltip" rel="{film.ID}" href="{film.URL}" title="{film.CUT_NAME2}"><img src="{film.IMG}" alt="{film.CUT_NAME2}" title="{film.CUT_NAME2}" /><span class="over_play"></span></a>
+						<span class="ribbon">{film.TAPPHIM}</span>
+						<div class="meta_block_spec"> 
+							<p class="title">
+								<a href="{film.URL}" title="{film.CUT_NAME}">{film.CUT_NAME}</a> {film.YEAR} ({film.TAPPHIM})
+							</p> 
+							<p>{film.CAT}</p> 
+						</div>
+                    </li>
+                    <!-- #END relate_film.row --><!-- END film_menu -->
+                </ul>
+            </div>

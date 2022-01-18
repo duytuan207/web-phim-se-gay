@@ -1,0 +1,55 @@
+### 02:26:59 05-12-2014 ###
+<b>Lỗi MySQL Query</b> : Unknown column 'film_hoanthanh' in 'field list'
+QUERY : UPDATE table_film SET film_name = "Tân Thần Điêu Đại Hiệp", film_name_real = "The Condor Heroes", film_img = "https://lh6.googleusercontent.com/-j2TuznBkQ9M/VH0y4K5ki1I/AAAAAAAABdU/lKaq5ro-JGE/s512/p.jpg", film_cat = "7,20,21", film_country = "2", film_director = "Lee Wai-chu, Deng Weien, Lee Tat-chiu", film_actor = "Trần Hiểu, Trần Nghiên Hy, Trương Hinh Dư, Lý Minh Thuận, Dương Dung, Đổng Tuyền, Nghiêm Khoan", film_area = "Vu Chính Studio, Hoa Hạ", film_time = "3/52 Tập", film_imdb = "6.4", film_hoanthanh = "Chưa Hoàn Thành", film_year = "2014", film_server = "0", film_trangthai = "1", film_lb = "1", film_info = "&lt;p&gt;
+	&lt;strong&gt;T&amp;acirc;n Thần Đi&amp;ecirc;u Đại Hiệp 2014&amp;nbsp;mạnh tay thổi luồng gi&amp;oacute; mới cho t&amp;iacute;nh c&amp;aacute;ch nh&amp;acirc;n vật nhưng dự &amp;aacute;n n&amp;agrave;y cũng hứa hẹn sẽ kh&amp;ocirc;ng l&amp;agrave;m biến đổi cốt truyện gốc. Chuyện t&amp;igrave;nh Qu&amp;aacute; &amp;ndash; Long với nhiều lần hợp &amp;ndash; tan vẫn l&amp;agrave; diễn biến trung t&amp;acirc;m m&amp;agrave; kịch bản hướng tới.&lt;/strong&gt;&lt;br /&gt;
+	&amp;nbsp;&lt;/p&gt;
+&lt;div&gt;
+	&lt;strong&gt;&lt;img alt=&quot;Xem Phim Tân Thần Điêu Đại Hiệp - The Condor Heroes - Vkool.Net - Ảnh 1&quot; src=&quot;http://vkool.net/images/scene/i.imgur.com/H0N4sWs.jpg&quot; title=&quot;Xem Phim Tân Thần Điêu Đại Hiệp - The Condor Heroes - Vkool.Net - Ảnh 1&quot; /&gt;&lt;/strong&gt;&lt;/div&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+	&lt;strong&gt;Thần Đi&amp;ecirc;u Đại Hiệp 2014&amp;nbsp;do c&amp;ocirc;ng ty truyền th&amp;ocirc;ng Hoa Hạ hợp t&amp;aacute;c c&amp;ugrave;ng Vu Ch&amp;iacute;nh Studio đầu tư sản xuất. T&amp;aacute;c phẩm d&amp;agrave;n dựng dựa tr&amp;ecirc;n nguy&amp;ecirc;n t&amp;aacute;c tiểu thuyết kiếm hiệp Thần Đi&amp;ecirc;u Hiệp Lữ, bản chỉnh sửa mới nhất năm 2004 của Kim Dung.&amp;nbsp;Tập 1 Thần Đi&amp;ecirc;u Đại Hiệp 2014&amp;nbsp;sẽ ra mắt kh&amp;aacute;n giả v&amp;agrave;o ng&amp;agrave;y 3/12 tới.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;
+&lt;div&gt;
+	&lt;strong&gt;&lt;img alt=&quot;Xem Phim Tân Thần Điêu Đại Hiệp - The Condor Heroes - Vkool.Net - Ảnh 2&quot; src=&quot;http://vkool.net/images/scene/i.imgur.com/Xq6ICAA.jpg&quot; title=&quot;Xem Phim Tân Thần Điêu Đại Hiệp - The Condor Heroes - Vkool.Net - Ảnh 2&quot; /&gt;&lt;/strong&gt;&lt;/div&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;
+	&lt;br /&gt;
+	&lt;strong&gt;Thần Đi&amp;ecirc;u Đại Hiệp 2014&amp;nbsp;d&amp;agrave;n dựng từ tiểu thuyết v&amp;otilde; hiệp kinh điển của nh&amp;agrave; văn Kim Dung. T&amp;aacute;c phẩm dự kiến c&amp;oacute; thời lượng 52 tập v&amp;agrave; sẽ ra mắt kh&amp;aacute;n giả v&amp;agrave;o mỗi tối thứ 4-5 h&amp;agrave;ng tuần.&lt;/strong&gt;&lt;br /&gt;
+	&amp;nbsp;&lt;/p&gt;
+&lt;div&gt;
+	&lt;strong&gt;&lt;img alt=&quot;Xem Phim Tân Thần Điêu Đại Hiệp - The Condor Heroes - Vkool.Net - Ảnh 3&quot; src=&quot;http://vkool.net/images/scene/i.imgur.com/6ckSy9a.jpg&quot; title=&quot;Xem Phim Tân Thần Điêu Đại Hiệp - The Condor Heroes - Vkool.Net - Ảnh 3&quot; /&gt;&lt;/strong&gt;&lt;/div&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;
+&lt;div&gt;
+	&lt;strong&gt;&lt;img alt=&quot;Xem Phim Tân Thần Điêu Đại Hiệp - The Condor Heroes - Vkool.Net - Ảnh 4&quot; src=&quot;http://vkool.net/images/scene/i.imgur.com/Mx34sMw.jpg&quot; title=&quot;Xem Phim Tân Thần Điêu Đại Hiệp - The Condor Heroes - Vkool.Net - Ảnh 4&quot; /&gt;&lt;/strong&gt;&lt;/div&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;
+&lt;div&gt;
+	&lt;strong&gt;&lt;img alt=&quot;Xem Phim Tân Thần Điêu Đại Hiệp - The Condor Heroes - Vkool.Net - Ảnh 5&quot; src=&quot;http://vkool.net/images/scene/i.imgur.com/MCGgVwt.jpg&quot; title=&quot;Xem Phim Tân Thần Điêu Đại Hiệp - The Condor Heroes - Vkool.Net - Ảnh 5&quot; /&gt;&lt;/strong&gt;&lt;/div&gt;
+&lt;p&gt;
+	&amp;nbsp;&lt;/p&gt;
+", film_key = "", film_des = "Tan Than Dieu Dai Hiep Vietsub, Online The Condor Heroes", film_name_ascii = 'tan than dieu dai hiep', film_tag = "Tan Than Dieu Dai Hiep Vietsub, Online The Condor Heroes", film_tag_ascii = 'tan than dieu dai hiep vietsub, online the condor heroes', film_date = '1417747471' WHERE film_id = '909'
+### 17:10:29 07-12-2014 ###
+<b>Lỗi MySQL Query</b> : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '",'','','','','')' at line 1
+QUERY : INSERT INTO table_cat (`cat_name`,`cat_name_ascii`,`cat_name_title`,`cat_name_key`,`cat_name_des`,`cat_order`,`cat_name_tag`) VALUES (''',"'",'','','','','')
+### 17:01:30 07-12-2014 ###
+<b>Lỗi MySQL Query</b> : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by 1-- - ',"'order by 1-- - ",'','','','','')' at line 1
+QUERY : INSERT INTO table_cat (`cat_name`,`cat_name_ascii`,`cat_name_title`,`cat_name_key`,`cat_name_des`,`cat_order`,`cat_name_tag`) VALUES (''order by 1-- - ',"'order by 1-- - ",'','','','','')
+### 22:49:28 13-12-2014 ###
+<b>Lỗi MySQL Query</b> : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Leary, Chris Victor, McKinley Belcher III','raza jaffrey, ophelia lovibond, thel' at line 1
+QUERY : INSERT INTO table_film (film_name,film_name_real,film_tapphim,film_name_ascii,film_img,film_actor,film_actor_ascii,film_year,film_time,film_area,film_director,film_director_ascii,film_cat,film_info,film_country,film_server,film_lb,film_key,film_des,film_imgbn,film_upload,film_tag,film_tag_ascii,film_trangthai,film_imdb,film_hoanthanh,film_gioithieu) VALUES ('Điều Cơ Bản','Elementary Season 3','HD','dieu co ban','http://vkool.net/images/poster/i.imgur.com/5uj5RKZ.jpg','Raza Jaffrey, Ophelia Lovibond, Thelma O'Leary, Chris Victor, McKinley Belcher III','raza jaffrey, ophelia lovibond, thelma o'leary, chris victor, mckinley belcher iii','2014','7/24 Tập','Hill of Beans Productions, Timberman-Beverly Productions, CBS Television Studios','Robert Doherty','robert doherty','2,10,12','<p>
+	<strong>Trong&nbsp;Phim Elementary Season 3&nbsp;n&agrave;y, <a href="http://phim6v.com/tim-kiem/sherlock+holmes/">Sherlock Holmes</a> (Jonny Lee Miller) gặp Joan Watson (Lucy Liu) ở... New York trong ho&agrave;n cảnh vị th&aacute;m tử đại t&agrave;i đang nghiện ngập v&agrave; b&aacute;c sĩ Watson l&agrave; người gi&uacute;p anh cắt nghiện. Kh&ocirc;ng qu&aacute; nếu n&oacute;i đ&acirc;y l&agrave; Sherlock Holmes của Mỹ, nhưng thật may mắn l&agrave; Sherlock vẫn c&oacute; kiểu Anh...</strong></p>
+','5','0','1','','','','17','','','1','7','Chưa Hoàn Thành','https://www.youtube.com/watch?v=nlCk6p5YCkA#t=48')
+### 22:12:30 13-12-2014 ###
+<b>Lỗi MySQL Query</b> : You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Leary, Chris Victor, McKinley Belcher III','raza jaffrey, ophelia lovibond, thel' at line 1
+QUERY : INSERT INTO table_film (film_name,film_name_real,film_tapphim,film_name_ascii,film_img,film_actor,film_actor_ascii,film_year,film_time,film_area,film_director,film_director_ascii,film_cat,film_info,film_country,film_server,film_lb,film_key,film_des,film_imgbn,film_upload,film_tag,film_tag_ascii,film_trangthai,film_imdb,film_hoanthanh,film_gioithieu) VALUES ('Điều Cơ Bản Phần 3','Elementary Season 3','HD','dieu co ban phan 3','https://lh6.googleusercontent.com/-oPfPz2JjBZ8/VIy9993uoMI/AAAAAAAABpc/cgL0hJhPgkY/phim6v.com-5uj5RKZ.jpg','Raza Jaffrey, Ophelia Lovibond, Thelma O'Leary, Chris Victor, McKinley Belcher III','raza jaffrey, ophelia lovibond, thelma o'leary, chris victor, mckinley belcher iii','2014','7/24 Tập','','Robert Doherty','robert doherty','','<p>
+	<strong>Trong&nbsp;Phim Elementary Season 3&nbsp;n&agrave;y, <a href="http://phim6v.com/tim-kiem/sherlock+holmes/">Sherlock Holmes</a> (Jonny Lee Miller) gặp Joan Watson (Lucy Liu) ở... New York trong ho&agrave;n cảnh vị th&aacute;m tử đại t&agrave;i đang nghiện ngập v&agrave; b&aacute;c sĩ Watson l&agrave; người gi&uacute;p anh cắt nghiện. Kh&ocirc;ng qu&aacute; nếu n&oacute;i đ&acirc;y l&agrave; Sherlock Holmes của Mỹ, nhưng thật may mắn l&agrave; Sherlock vẫn c&oacute; kiểu Anh...</strong></p>
+','5','0','1','','','','17','','','1','','','')

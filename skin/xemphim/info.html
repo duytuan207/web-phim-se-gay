@@ -1,0 +1,42 @@
+﻿<div class="name-info">
+    <h1>{film.NAME}</h1>
+    <h2>{film.NAMEREAL}<h2></div>
+		<div class="movie-info">
+		{BREADCRUMBS}
+		<div class="prpt">
+		<div class="cover">
+			<a href="{film.URL}" title="Xem Phim {film.NAME}"><img src="{film.IMG}" alt="Xem Phim {film.NAME}" /></a>
+			<p style="color: #666;font-size: 12px;font-weight: 700;text-align: center;"><span>{film.VIEWED}</span> Lượt Xem</p>	
+		</div>
+		<div class="dt">
+			<p class="info_stt">{film.TAPPHIM} {film.CAT}</p>
+			<p>Đạo diễn: <span>{film.DIRECTOR}</span></p>
+			<p>Diễn viên: <span>{film.ACTOR}</span></p>
+			<p>Quốc gia: <span>{film.COUNTRY}</span></p>
+			<p>Thời lượng: <span>{film.TIME}</span></p>
+			<p>Năm phát hành: <span>{film.YEAR}</span></p>
+			<p class="bt"><a class="xem w-bt" href="{film.WATCH}" title="{film.NAME}">Xem Phim</a></p>
+			<br /><br /><br /><b>Hãy Bấm Nút <div class="fb-like" data-href="{film.URL}" show_faces="false" data-layout="button_count" data-share="true"></div> Để Ủng Hộ Chúng Tôi !!!</b>
+			<!-- <p class="bt"><a style="padding: 9px;display: -webkit-box;color: #fff;font-weight: 700;background-color: #428bca;border-color: #357ebd;font-size: 12px;line-height: 1.5;border-radius: 3px;" rel="noindex,nofollow" href="http://phim1v.com/?utm_source=xemphimon" title="xem phim">Xem Phim HD</a></p> -->
+			</div>
+		<div class="clr"></div>
+<div class="block b" id="list">    
+	<div class="title_bl">        
+		<ul class="tabs">
+			<li id="tab_list_1" class="f all c"><div class="tab" >Nội Dung Phim</div>
+		</ul>
+    <div class="clear"></div>
+    </div>
+    <div class="content tab_cts" style="margin-top: -5px;">
+        <div id="tab_ct_list_1" class="tab_ct c">
+			<div id="movie_description" class="entry movie_description">
+				{film.INFO}
+			</div>
+        </div>
+	</div>
+</div>
+{film.TRAILER}
+		</div>
+		</div>
+				{film.TAG}
+			<!-- MAIN film('relate',8,1,'{cat.ID}') -->

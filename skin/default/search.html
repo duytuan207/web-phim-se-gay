@@ -1,0 +1,16 @@
+<form class="form-search" onsubmit="return do_search()" method="post">
+     <input class="input-submit" type="submit" onclick="return timnhanh();" value="Tìm kiếm" /><a class="submit" id="bounceEaseOut" onclick="return do_search(1);"></a>
+     <input class="input-text" id="searchInput" name="q" onkeydown="EnterKey(event);" type="text" onfocus="this.value=''" value="Nhập từ khóa tìm kiếm..." />
+</form>
+<script type="text/javascript">
+function timnhanh() {
+	var	keyword	=	$('#searchInput').val();	
+	if(!keyword) {
+		alert('Vui lòng nhập từ khóa!');
+	}else {
+		keyword=keyword.replace(/\s/g,"+");
+		window.location	=	'http://phimvc.com/tim-kiem/'+keyword;
+	}
+	return false;
+}
+</script>

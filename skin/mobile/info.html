@@ -1,0 +1,26 @@
+﻿<div class="content-items film_info" style="margin-top: -19px;">
+        <img width="140" height="195" class="album-img" alt="{film.NAME}" src="{film.IMG}">
+		<h3>{film.NAME} {film.YEAR}</h3>
+		{film.NAMEDES}
+        <p  style="border-top: 1px solid #dfdfdf; margin-top: 5px;">Đạo diễn: {film.DIRECTOR}</p>
+        <p>Diễn viên: {film.ACTORDES}</p>
+        <p>Thể loại: {film.CATDES}</p>
+        <p>Quốc gia: {film.COUNTRYDES}</p>
+        <p>Năm sản xuất: {film.YEAR}</p>
+        <p>Thời lượng: {film.TIME}</p>
+		<ul class="clearfix" style="margin-top: 5px;"><a href="{film.WATCH}" class="btn"><span class="kyt_episode kyt_episode_current">Xem phim</span></a></ul>
+		<br><br>
+		<div id="fnBiography" class="info-content clear_fix none">
+			<p>{film.INFOMOBILE}</p>
+		</div>
+</div>
+		<a href="#" class="read-more fn-expand" expand-box="fnBiography" expand-class="none" expand-desc="Xem thông tin|Rút gọn">Xem thông tin <i class="icon-dropdown"></i></a>
+<!--<div class="filter">
+    <ul class="tab-nav">
+        <li><a href="javascript:void()" class="fnRTTab active" id="fnRTTabRelate">Cùng thể loại</a></li>
+    </ul>
+</div>
+<div class="content" id="fnBodyContent">
+ MAIN film('relate',5,1,'{cat.ID}') --      
+</div>-->
+		

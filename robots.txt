@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /images/
+Disallow: /sub/
+Disallow: /js/
+Disallow: /trailer/
+Disallow: /no-cache/
+Disallow: /picasa/
+Disallow: /play/
+Disallow: /xml/
+Sitemap: http://phim6v.com/sitemap.xml

@@ -1,0 +1,104 @@
+<script type="text/javascript">
+	videojs.options.flash.swf = "../video/video-js.swf";
+    var episode_id = {episode.ID};
+    $(document).ready(function() {
+        $("#navbar").html('{BREADCRUMBS}');
+        load_video(episode_id);
+    })
+</script>
+<div class="block-wrapper page-single" id="block-player">
+    <!-- Thông tin phim -->
+    <div class="movie-info movie-info-watch watch-info-box">
+        <div class="block-movie-info">
+            <div class="row">
+                <div class="col-9 movie-detail">
+                    <h1 class="movie-title"><span class="title-1">Xem phim {film_name}</span><span class="title-2">Xem phim {film_name}</span></h1>
+                    <div class="film-description-box">
+                        <p class="film-description-short">{film.INFO} [<a href="{film.URL}" title="{film_name}">Xem Thêm</a>]</p>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="col-3 movie-image">
+                    <div class="movie-1-img"><img alt="{film_name}" title="{film_name}" src="{film.IMG}">
+                        <div class="movie-watch-link-box"><a class="movie-watch-link" href="{film.URL}#trailer" title="Trailer {film_name}">Xem Trailer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Thông tin phim -->
+    <!-- Thông báo phim chất lượng thấp -->
+    <!-- /Thông báo phim chất lượng thấp -->
+
+    <!-- BEGIN PLAYER -->
+    <div id="watch-block">
+        <div id="media-player-box" style="position: static; margin-top: 20px;"></div>
+                   
+        <div class="user-action">
+            <div id="btn-light" class="btn-cs light-off"><i class="icon-light-sm"></i><span id="light-statuss" onclick="return _light()">Tắt đèn</span>
+            </div>
+            <a id="btn-add-favorite" class="btn-cs add-favorite" rel="nofollow" href="javascript:void(0)" onclick="filmBox({film_id});">
+                <i class="icon-add-sm"></i>
+                <span class="btn-text" id="btn-text_add">{film_IDBOX}</span>
+            </a>
+			<div id="btn-autonext" class="btn-cs autonext" onclick="_autonext()"><i class="icon-autonext-sm"></i><span>Tự chuyển tập: <span id="autonext-status"></span></span></div>
+            <div id="btn-resize-player" class="btn-cs expand-player">
+                <i class="icon-expand-sm"></i>
+                <span id="resize-status" onclick="return zoom_css()">Phóng to</span>
+            </div>
+            <div id="btn-download" class="btn-cs download-player">
+				<i class="icon-download-sm"></i>
+				<span id="resize-status" onclick="return download(episode_id)">Download</span>
+			</div>
+            <div id="btn-remove-ad" class="btn-cs remove-ad" onclick="return ip_error({film_id},{episode.ID})"><i class="icon-removead-sm"></i>Báo lỗi</div>
+        </div>
+    </div>
+    <!-- END PLAYER -->
+	<li class="backup-server" id="download" style="display:none;width:100%;text-align:center;"></li>
+    <iframe src="//www.facebook.com/plugins/like.php?href={film.URL}&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21&amp;appId=164516860333410" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+    <input type="hidden" id="filmid" value="{film_id}" />
+    <div class="film_action">
+        <div class="star_items">{rate.IMG}</div>
+    </div>
+    <div class="rate_result" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">Đánh giá phim</div>
+    <div class="star_meaning"></div>
+    <br />
+    <br />
+    <!-- MAIN announcement() -->
+    <div class="clear"></div>
+    <div class="ad-container watch-banner-2">
+        <!-- uniAd Code zone 9/phimmoi.net -->
+        <script type="text/javascript">
+            <!--
+            try {
+                uniAd.displayZone(9);
+            } catch (err) {
+                console.error('zone 9: ' + err.description);
+            }
+            -->
+        </script>
+        <!-- uniAd Code zone 9/phimmoi.net -->
+    </div>
+    <!-- List tập phim bộ -->
+    <!-- List tập phim lẻ/server backup -->
+    <div class="list-server">
+        <div class="server clearfix">
+            <h2 class="server-name">Các server dự phòng</h2>
+            <ul class="server-list">
+                {any_episodes}
+            </ul>
+        </div>
+    </div>
+    <!-- /List tập phim lẻ/server backup -->
+    <div class="clear"></div>
+    {film.TAG}
+</div>
+
+<div class="block-wrapper page-single block-comments">
+    <h4>Bình luận về phim</h4>
+    <div class="fb-comments" data-href="{film.URL}" data-width="650" data-numposts="5" data-colorscheme="dark"></div>
+</div>
+<div class="clear"></div>
+
+<!-- MAIN film('relate',6,1,'{film_cat}') -->

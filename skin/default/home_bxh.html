@@ -1,0 +1,50 @@
+﻿<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#" xml:lang="en" lang="en">
+<head>
+    <title>{web.TITLE}</title>
+    <meta name="description" content="{web.DES}" />
+    <meta name="keywords" content="{web.KEYWORDS}" />
+	<meta charset="utf-8">
+    <link rel="alternate" type="application/rss+xml" title="{web.TITLE}" href="{web.LINK}/rss.php">
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="{link.URL}"/>
+    <base href="{web.LINK}/">
+    <link rel="shortcut icon" type="image/ico" href="{web.LINK}/images/favicon.ico" />
+    <link href="{skin.LINK}/css/reset.css?v=0.11" rel="stylesheet" type="text/css" />
+    <link href="{skin.LINK}/css/style.css?v=1.032" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript" src="{skin.LINK}/js/lib.vp.js?v=1.055"></script>
+    <script type="text/javascript" language="javascript" src="{skin.LINK}/js/UTM_American_Sans_400.font.js"></script>
+</head>
+<body style="margin-top: -18px;">
+<!-- MAIN top_menu() -->
+<div class="kyt-header clearfix kyt-header-fjx">
+ <div class="main-width clearfix relative block-header-1">
+ <h1 class="logo"><a href="{web.LINK}" title="phim, xem phim">Phim</a></h1>
+	<!-- MAIN search() -->
+	<!-- MAIN box_menu() -->
+  </div>
+</div>
+<div id="main-content" class="main-width clearfix">
+ 	<div class="span10 fl-left">
+    	<div class="block-col1">
+        	<h3 class="main-bar-bxh cufont">Bảng xếp hạng</h3>
+            <div class="clearfix kyt-wrap-tc">
+            	<div class="top_chart_col">
+                	<div class="tc_title"><h2>BXH Ngày</h2></div>
+                    <!-- MAIN film('bxh-day',10) -->
+                </div>
+                <div class="top_chart_col">
+                	<div class="tc_title"><h2>BXH Tuần</h2></div>
+                    <!-- MAIN film('bxh-week',10) -->
+                </div>
+                <div class="top_chart_col last-child">
+                	<div class="tc_title"><h2>BXH Tháng</h2></div>
+                    <!-- MAIN film('bxh-month',10) -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- MAIN footer() -->
+</body>
+</html>

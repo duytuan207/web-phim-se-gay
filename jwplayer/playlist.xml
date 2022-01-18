@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?> 
+<playlist > 
+<tracklist> 
+
+<track> 
+<title>Tiêu đề bài hát 1</title> 
+<annotation>Mô tả 1</annotation> 
+<location>https://picasaweb.google.com/lh/photo/MjELvoeyelJYi7rvIr-ZI9MTjNZETYmyPJy0liipFm0</location> 
+<image>Link ảnh của bài hát (nếu có), bạn có thể bỏ phần này nếu không muốn hiển thị ảnh</image> 
+</track> 
+
+<track> 
+<title>Tiêu đề bài hát 2</title> 
+<annotation>Mô tả 2</annotation> 
+<location>https://picasaweb.google.com/lh/photo/6v3kZs_zejNrX_s4RMCvdtMTjNZETYmyPJy0liipFm0</location> 
+<image>Link ảnh của bài hát (nếu có), bạn có thể bỏ phần này nếu không muốn hiển thị ảnh</image> 
+</track> 
+
+</tracklist> 
+</playlist>

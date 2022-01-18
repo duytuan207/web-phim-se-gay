@@ -1,0 +1,65 @@
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.fnRTContent').addClass('none');
+		$(this).find('#fnRTNew').removeClass('none');
+		$(this).find('#fnRTRand').removeClass('none');
+		$(this).find('#fnRTRelate').removeClass('none');
+		$(this).find('#fnRTHotIMDB').removeClass('none');
+		$('.fnRTTab').on('click',function(){
+			$('.fnRTContent').addClass('none');
+			$('.fnRTTab').removeClass('active');
+			$(this).addClass('active');
+			var id = $(this).attr("id");
+			id = id.replace("Tab","");
+			$('#'+id).removeClass('none');
+			return false;
+		})
+	});
+</script>	
+
+<script>
+$('audio,video').mediaelementplayer({
+	success: function(player, node) {
+		$('#' + node.id + '-mode').html('mode: ' + player.pluginType);
+	}
+});
+
+</script>
+<img id="whosamung" src="http://whos.amung.us/swidget/phimokemobi" width="0" height="0" border="0" title="User Online" />
+<a class="mask fn-body-mask"></a>
+			
+		
+		<div class="popup-mask none" id="fnPopup">
+			<div class="flyout popup-report none" id="fnFbBox">
+				<div class="glist">
+				
+					<div class="popup-content">
+						<form action="" name="frmFb" id="frmFb">
+							<div class="outside-element">
+								<span class="popup-alert">Chủ đề:*</span>
+								<p class="text-box icon-dropdown">
+									<span class="txt-selected" id="fnFbSubjectLabel">Vui lòng chọn loại phản hồi</span>
+									<select name="subject" id="fnFbSubject" class="select">
+										<option value="">Vui lòng chọn loại phản hồi</option><option value="1">Báo lỗi</option><option value="2">Góp ý nội dung</option><option value="3">Yêu cầu chức năng</option><option value="5">Nhạc chờ</option><option value="4">Khác</option>
+									</select>
+								</p>
+							</div>
+							<div class="outside-element">
+								<span class="popup-alert">Link:</span>
+								<p class="text-box">
+									<input name="link" id="fnFbLink" type="text" class="trpr-textbox">
+								</p>
+							</div>
+							<div class="outside-element">
+								<span class="popup-alert">Mô tả:</span>
+								<p class="text-box text-area">
+									<textarea name="content" id="fnFbContent" class="trpr-textbox"></textarea>
+								</p>
+							</div>
+							<input type="hidden" name="flVer" value="html5">
+							<input type="hidden" name="browser" value="Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.10 (KHTML, like Gecko) Chrome/23.0.1262.0 Safari/537.10">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>

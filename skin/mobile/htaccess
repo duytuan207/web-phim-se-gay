@@ -1,0 +1,22 @@
+RewriteEngine on
+RewriteRule ^rss.xml$ rss.php [L] 
+RewriteRule ^f/(.*)$ filmf.php?id=$1 [L]   
+
+RewriteRule ^xem-phim$ index.php?act=/main [L] 
+RewriteRule ^xem-phim-online/(.*)/(.*)/(.*).html$ index.php?film=$1 [L]
+RewriteRule ^xem-phim-online/(.*)/(.*).html$ index.php?film=$1 [L]
+RewriteRule ^phim-bo-(.*)$ index.php?cty=$1 [L]  
+RewriteRule ^phim-(.*)$ index.php?cat=$1 [L] 
+
+RewriteRule ^xem-phim-le/(.*).html$ index.php?film=$1 [L] 
+RewriteRule ^xem-phim-bo/(.*).html$ index.php?film=$1 [L]    
+RewriteRule ^tu-khoa-phim/(.*)$ index.php?tag=$1 [L]  
+RewriteRule ^tim-kiem/(.*)$ index.php?search=$1 [L]  
+RewriteRule ^danh-sach/(.*)$ index.php?top=$1 [L]     
+
+RewriteRule ^huong_dan.html$ index.php?act=guide [L]  
+RewriteRule ^the_loai.html$ index.php?act=listcat [L]  
+RewriteRule ^quoc_gia.html$ index.php?act=listcty [L]  
+RewriteRule ^top_phim.html$ index.php?act=listtop [L]  
+RewriteRule ^about.html$ index.php?act=info [L]  
+RewriteRule ^danh_muc.html$ index.php?act=listall [L]  

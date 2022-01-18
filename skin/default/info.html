@@ -1,0 +1,33 @@
+﻿		{BREADCRUMBS}
+		<script src="http://connect.facebook.net/vi_VN/all.js#appId=734645139900172&amp;xfbml=1"></script>	
+		<div class="content movie-info">
+				<div class="prpt">
+                	<div class="cover">
+                    	<a href="{film.URL}" title="Phim {film.NAME}"><img src="{film.IMG}" alt="{film.NAME}" title="{film.NAME}"/></a>
+                    </div>
+                    <div class="dt">
+                    	<h2 title="Phim {film.NAME}">{film.NAME}</h2>
+						{film.NAMEREAL}
+						<br /><br />
+						<p class="bt">Status: <font color="red">{film.TAP}</font></p>
+                        <p class="bt">Đạo diễn: <span>{film.DIRECTOR}</span></p>
+                        <p class="bt">Diễn viên: <span>{film.ACTOR}</span></p>
+                        <div class="bt">Thể loại: <span>{film.CAT}</span></div>
+                        <div class="bt">Quốc gia: <span>{film.COUNTRY}</span></div>
+                        <p class="bt">Thời lượng: <span>{film.TIME}</span></p>
+                        <p class="bt">Năm phát hành: <span>{film.YEAR}</span></p>
+                        <p class="bt">Lượt xem: <span>{film.VIEWED}</span><div class="fb-like"  style="float: left;padding: 6px 0px 0px 10px;" data-href="{film.URL}" show_faces="false" data-layout="button_count" data-share="false"></div></p>
+                        <p class="play"><a class="btn btn-primaryplay" href="{film.WATCH}" title="{film.NAME}">Xem phim</a></p>
+                    </div>
+                    <div class="clear"></div>
+                    <div id="movie_description" class="entry movie_description">
+                    	<ul class="tabbed-info clearfix"> <li><a id="show_content2" class="active" onclick="return false;" href="#">Nội dung chính</a></li> </ul>
+						<div id="content2" class="html"> <span>{film.INFO}</span> </div>
+					</div>		
+						
+						<em>Bạn đang xem phim <a href="{film.URL}"><span style="color: #ff0000;"><strong>{film.NAME}{film.GACH}{film.NAMEREAL1} - {film.TAP}</a></strong></span>, chúc các bạn <a href="{web.LINK}/">xem phim</a> vui vẻ.</em>
+                    			
+                </div>
+				{film.TAG}
+            </div>
+			<!-- MAIN film('relate',8,1,{cat.ID}) -->

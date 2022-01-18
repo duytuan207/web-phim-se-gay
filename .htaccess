@@ -1,0 +1,74 @@
+RewriteEngine on
+RewriteRule ^google2ce0e1bf4cfbe6ee.html$ google2ce0e1bf4cfbe6ee.html [L]
+RewriteRule ^z7APLjqIFzakxyKVtvknVJXev18.html$ z7APLjqIFzakxyKVtvknVJXev18.html [L]
+RewriteRule ^ads/(.*)$ ads/$1 [L]
+RewriteRule ^mobile/(.*)$ mobile/$1 [L]
+RewriteRule ^upload/(.*)$ upload/$1 [L]
+RewriteRule ^admincp/(.*)$ admincp/$1 [L]
+RewriteRule ^rapphim/(.*)$ rapphim/$1 [L]
+RewriteRule ^js/(.*)$ js/$1 [L]
+RewriteRule ^rank.html$ rank.html [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteCond %{HTTP_REFERER} !^$
+RewriteRule .*\.(gif|GIF|jpg|JPG|bmp|BMP)$ - [F]
+RewriteRule ^xml/(.*)/(.*).xml?$ xml.php?i=$1&s=$2 [L]
+RewriteRule ^yeu-cau-phim.html?$ ./?movie=/request [L]
+
+RewriteRule ^skin/(.*).html?$ /index.php [R]
+RewriteRule ^watch/(.*)?$ ./?movie=/watch/$1 [L]
+RewriteRule ^user/(.*)?$ ./?movie=/user/$1 [L]
+RewriteRule ^forget/?$ ./?movie=/forget/ [L]
+RewriteRule ^repass/?$ ./?movie=/repass/ [L]
+RewriteRule ^logout/?$ ./?movie=/logout/ [L]
+RewriteRule ^tu-phim/?$ ./?movie=/tu-phim/ [L]
+RewriteRule ^login/?$ ./?movie=/login/ [L]
+RewriteRule ^register/?$ ./?movie=/register/ [L]
+RewriteRule ^trailer/(.*).html?$ ./?movie=/trailer/$1 [L]
+RewriteRule ^error.html?$ ./?movie=/error/$1 [L]
+RewriteRule ^info/(.*)?$ ./?movie=/thong-tin/$1 [L]
+RewriteRule ^yeu-cau/(.*)$ ./?movie=/request/$1 [L]  
+RewriteRule ^search-film/(.*)/trang-(.*).html$ ./?movie=/search-film/$1/$2 [L]
+RewriteRule ^dien-vien/phim-(.*).html$ ./?movie=/dien-vien/phim/$1 [L]
+RewriteRule ^dien-vien/(.*).html$ ./?movie=/dien-vien/phim/$1 [L]
+RewriteRule ^dien-vien.html$ ./?movie=/dien-vien [L]
+RewriteRule ^tim-kiem/(.*)/trang-(.*).html$ ./?movie=/tim-kiem/$1/$2 [L]
+RewriteRule ^tim-kiem/(.*)$ ./?movie=/tim-kiem/$1 [L]
+RewriteRule ^xem-phim/(.*)/trang-(.*).html$ index.php?movie=/tag/$1/$2  [NC,QSA,L]
+RewriteRule ^xem-phim/(.*).html$ index.php?movie=/tag/$1  [NC,QSA,L]
+RewriteRule ^tag/(.*)/trang-(.*).html$ index.php?movie=/tag/$1/$2  [NC,QSA,L]
+RewriteRule ^tag/(.*).html$ index.php?movie=/tag/$1  [NC,QSA,L]
+RewriteRule ^tag/(.*)$ index.php?movie=/tag/$1  [NC,QSA,L]
+RewriteRule ^phim-(.*).vc(.*).html?$ ./?movie=/thong-tin/$2/$1 [L]
+RewriteRule ^danh-sach-phim/trang-(.*).html?$ ./?movie=/sitemap/$1 [L]
+RewriteRule ^danh-sach-phim.html?$ ./?movie=/sitemap [L]
+RewriteRule ^xem-phim-(.*).vc(.*).html?$ ./?movie=/watch/$2/$1 [L]
+RewriteRule ^(.*)/trang-(.*).html?$ ./?movie=/list/$1/$2  [NC,QSA,L]
+RewriteRule ^(.*).html?$ ./?movie=/list/$1  [NC,QSA,L]
+
+RewriteRule ^phim-(.*)/trang-(.*).html?$ index.php?movie=/quoc-gia/phim-$1/$2 [NC,QSA,L]
+RewriteRule ^phim-(.*).html?$ index.php?movie=/quoc-gia/phim-$1/1 [NC,QSA,L]
+
+
+RewriteRule ^rss/?$ rss.php [L]
+RewriteRule ^rss$ rss.php [L]
+RewriteRule ^sitemap/?$ sitemap.php [L]
+RewriteRule ^sitemap$ sitemap.php [L]
+
+# compress text, html, javascript, css, xml:
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+
+#ErrorDocument 400 /400.shtml
+#ErrorDocument 401 /401.shtml
+#ErrorDocument 403 /403.shtml
+#ErrorDocument 404 /404.shtml
+#ErrorDocument 500 /500.shtml

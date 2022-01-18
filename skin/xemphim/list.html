@@ -1,0 +1,21 @@
+<div class="movie-box">
+	{BREADCRUMBS}
+
+    <ul class="cfv">
+	<!-- BEGIN film_list --><!-- #BEGIN row -->
+		<li>
+			<a class="th tooltip" rel="{film.ID}" href="{film.URL}" title="{film.CUT_NAME}"><img src="{film.IMG}" alt="{film.CUT_NAME}" /><span class="over_play"></span></a>
+			<span class="ribbon">{film.YEAR}</span>
+			<div class="meta_block_spec"> 
+				<p class="title">
+					<a href="{film.URL}" title="{film.CUT_NAME}">{film.CUT_NAME}</a>
+				</p> 
+				<p>{film.CAT}</p> 
+			</div>
+		</li>
+	<!-- #END row --><!-- END film_list -->
+	</ul>
+	<br class="clr" />
+	<br class="clr" />
+    <div class="pagination">{VIEW_PAGES}</div>
+</div>

@@ -1,0 +1,17 @@
+<div id="search">
+	<form action="tim-kiem.html" method="get" onsubmit="return do_search();"><input type="text" placeholder="Tìm: tên phim, đạo diễn, diễn viên" id="searchInput" name="q" onkeydown="EnterKey(event);" /><a class="submit" id="bounceEaseOut" onclick="return do_search(1);"></a><a href="#" onclick="return timnhanh();" class="timnhanh"></a>
+	</form>
+</div>
+
+<script type="text/javascript">
+function timnhanh() {
+	var	keyword	=	$('#searchInput').val();	
+	if(!keyword) {
+		alert('Vui lòng nhập từ khóa!');
+	}else {
+		keyword=keyword.replace(/\s/g,"+");
+		window.location	=	base_url+'/tim-kiem/'+keyword;
+	}
+	return false;
+}
+</script>

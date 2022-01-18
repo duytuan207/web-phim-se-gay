@@ -1,0 +1,81 @@
+<div id="list" class="block-col1 clearfix">
+	<h3 class="title-list cufont">Yêu cầu phim</h3>
+    <div class="content entry-padding10">
+        <form onsubmit="return request_send();" method="post">
+
+        <b><font size="2"><font color="#FF0000">Chú ý:</font> Vui lòng đọc kỹ trước khi yêu cầu phim</font></b><br><br>
+
+        - Trước khi yêu cầu bạn phải search phim bạn định yêu cầu tại ô <font color="#FF0000"><b>Tìm Kiếm</font></b> để xem phim đó đã có chưa. Bạn chỉ được phép yêu cầu phim chưa có trong web.
+
+        <br>
+
+        - Khi yêu cầu phim tên phim phải được viết bằng <b>Tiếng Việt CÓ DẤU</b> hoặc bằng <b>Tiếng Anh</b>.
+
+        <br>
+
+        - Bạn không được phép yêu cầu các bộ phim đang chiếu ở rạp vì thường những phim này sẽ không có liền, ngay khi nó có thì <b>website đã tự post lên rồi không cần bạn phải yêu cầu</b>.
+
+        <br>
+
+        - Bạn không được phép yêu cầu các phim việt nam chiếu ở rạp dù cho các phim VN này đã chiếu từ nhiều năm trước (ví dụ như: Giải cứu thần chết, chuông reo là bắn, công chúa teen ...) vì phim việt nam rất chậm ra DVD thậm chí là không ra DVD, <b>bất cứ khi nào nó có thì website sẽ post ngay lập tức nên không cần bạn phải yêu cầu</b>.
+
+        <br>
+
+        - Trong một tuần bạn chỉ có thể yêu cầu post 1 bộ phim bộ, phim lẻ thì không giới hạn.
+
+        <br>
+
+        - Đối với các bộ phim bộ dài tập đang được chiếu trên Phim30S.Com các bạn không nên yêu cầu các tập tiếp theo vì các phim này thường vẫn còn đang chiếu trên tivi, nếu chưa được cập nhật tập mới ở website là do tivi chưa chiếu tập mới hoặc bên sub chưa làm xong sub việt. Khi nào có tập mới hoàn chỉnh thì sẽ được post ngay lập tức, chưa post nghĩa là chưa có, các bạn yêu cầu chỉ tốn công.</font>
+
+        <br>
+
+        <br>
+
+        <h2>Nếu bạn vi phạm bất cứ điều gì bên trên thì yêu cầu phim của bạn sẽ bị xóa mà không cần báo trước</h2>
+
+        <br><br>
+
+        <font color="red"><b>Note:</b> Hãy ghi rõ đầy đủ tên phim và địa chỉ liên lạc (yahoo, email, gmail) để BQT có thể gửi phim qua cho bạn bằng địa chỉ ấy.</font><br /><br />
+
+          <table border="0" cellpadding="5" cellspacing="3">
+            <tr>
+              <td style="vertical-align:top; width:105px;">Nội dung yêu cầu: </td>
+              <td><textarea name="request_content" id="request_content"  style="width:350px; height:100px;"></textarea></td>
+            </tr>
+            <tr>
+              <td>Mã bảo mật: </td>
+              <td><input class="text" type="text" name="security" style="vertical-align: middle;"  id="security"/><img style="vertical-align: middle;" src="/imgchange.php" align="absmiddle"></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td><input id="send-comment" class="button2" type="submit" value="Gửi yêu cầu" onclick="return request_send();"  name="submit"></td>
+
+            </tr>
+          </table>
+        </form>
+	</div>
+</div>
+<script type="text/javascript">
+function request_send(){
+	var	sec_num			=	encodeURIComponent($('#security').val());
+	var	request_content	=	encodeURIComponent($('#request_content').val());
+	if(!request_content){
+		alert("Bạn chưa nhập nội dung yêu cầu");
+	}
+	else{
+		if(!sec_num){
+			alert("Bạn chưa nhập mã số bảo mật");
+		}else{
+			$.get("index.php",{ request: 1,sec_num:sec_num,request_content:request_content},function(data){
+				if(data == 1) {
+					$('div.content').html('<center>Yêu cầu của bạn đã được gửi đi! chúng tôi sẽ cập nhật bộ phim trong thời gian sớm nhất</center>');
+				}else {
+					alert(data)
+				}
+			});
+		}
+	}
+	return false
+}
+
+</script>

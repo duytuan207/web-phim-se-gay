@@ -1,0 +1,17 @@
+<div id="list" class="block-col1 clearfix">
+        {BREADCRUMBS}
+    <ul class="movie-list-items cath img_rz clearfix">
+    <!-- BEGIN film_list --><!-- #BEGIN row -->
+		<li id="pl_{film.ID}">
+        <a href="{film.URL}" class="movie-thumbnail">
+		<img title="{film.CUT_NAME}" alt="{film.CUT_NAME}" src="{film.IMG}">
+		</a>
+		<div class=" bupdate">{film.TAP}</div>
+		<div class="year" style="position: absolute;z-index: 9999;margin-top: -206px;margin-left: 84px;"><img src="{web.LINK}/images/year/{film.YEAR}.png" alt="{film.YEAR}"></div>
+		<p><strong><a href="{film.URL}" title="{film.NAMEVN}">{film.VN}</a></strong></p>
+		<p>{film.EN}</p>
+		</li>
+        <!-- #END row --><!-- END film_list -->
+    </ul>
+    <div class="pagination_list">{VIEW_PAGES}</div>
+</div>

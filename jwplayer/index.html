@@ -1,0 +1,31 @@
+	<html>
+		<head>
+			<title>TEST</title>
+			<script type="text/javascript" src="jwplayer.min.js"></script>
+		</head>
+		<body>
+			<div id="player"></div>
+			<script>
+				jwplayer("player").setup({
+					flashplayer:'player.swf',				
+					controlbar: 'bottom',
+					width:700, height:500,	
+					autostart:'true',			
+					plugins: {
+						'timeslidertooltipplugin-1': {},
+						'captions':{                                    
+							color:'#ffff80',
+							fontFamily:'Tahoma, Geneva, sans-serif',
+							fontSize:'17',
+							fontWeight:'normal'
+						}
+					},
+					'proxy.file':'player.php',
+					//'file':'http://www.youtube.com/watch?v=zRCzcc1V1rA',
+					//'file':'http://localhost/test/playlist.xml'
+					'file':'https://picasaweb.google.com/112216596324424580262/CoBeNguoiGo1Full?authkey=Gv1sRgCMDfgMq1_oLbWw',
+					'captions.file':'Hostages_S01E01.srt',
+				});
+			</script>
+		</body>
+	</html>
